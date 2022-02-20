@@ -1,0 +1,89 @@
+
+//----NODE-----
+.view-id-game_detail.view-display-id-block_3{
+    //Node title
+      .view-content{
+        //-- fivestar rate
+        .views-field.views-field-field-rating{
+          position: absolute;
+          right: 0px;
+          top: 7px;
+          color: #fff;
+          .views-label.views-label-field-rating{
+          padding-right: 20px;
+          }
+          .field-content{
+            float: right;
+            .select-wrapper::after{
+              display: none;
+            }
+          }
+        }
+      }
+        //-- Node suggestion
+      // .view-id-game_detail.view-display-id-block_1{
+      //   .game--suggestion--title{
+      //     font-size: 14px;
+      //     color: #fff;
+      //     margin-bottom: 5px;
+      //     font-weight: initial;
+      //   }
+      //style carousel width
+      //   .view-content{
+      //     width: 550px;
+      //     .slick-list{
+      //       width: 500px;
+      //     }
+          
+      //     .slick__arrow{
+      //       margin-top: -10px;
+      //     }
+      //   }
+      // }
+    
+      //--Block node content
+      .view-id-game_detail.view-display-id-block_2{
+        //--game iframe
+        // .views-field.views-field-field-game{
+        //   margin: auto;
+        //   width: 77%;
+        //   padding: 20px 0px 40px 0px;
+        // }
+        //--game instruction
+        // .instruction--title ,.tip--title{
+        //   font-size: 25px;
+        //   color: #fff;
+        //   margin-bottom: 5px;
+        //   font-family: monospace;
+        //   text-transform: uppercase;
+        // }
+        // .instruction--content>p,.tip--content>p{
+        //   color: #fff;
+        //   line-height: 1.7;
+        // }
+        //--review result
+        .review{
+          margin: 10px 0px 30px 0px;
+          color: yellow;
+          .review--star{
+            float: left;
+          }
+          .review--star--value{
+            float: left;
+            color: yellow;
+            margin: -1px 10px 0px 5px;
+            font-size: 24px;
+          }
+          .review--count{
+            color: #fff;
+            padding-top: 8px;
+            font-size: 12px;
+          }
+        }
+      }
+        
+    
+    }
+    
+    
+    

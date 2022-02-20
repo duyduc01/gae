@@ -1,0 +1,172 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/* 
+Instruction
+- Each element in Drupal has unique id
+- Each hook has some variables or not so each hook needs detail information.
+- To debug variable use kint($variables of hook) to debug depending on the hook variable.
+
+*/
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter()
+ */
+
+ function eg_learn_theme_suggestions_page_alter(&$suggestions, $variables) {
+  //kint($suggestions);
+}
+
+
+
+ 
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+
+ //Add class to page tile as the title itself
+function eg_learn_preprocess_page_title(&$variables) {
+  //kint($variables);
+  // This won't work properly with Twig debugging enabled.
+  // $title = $variables['title'];
+
+  // Here is a safer method to get the current title.
+  $request = \Drupal::request();
+  $route_match = \Drupal::routeMatch();
+  $title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+
+  $css_title = \Drupal\Component\Utility\Html::cleanCssIdentifier($title);
+  $variables['title_attributes']['class'][] = 'page__title';
+  $variables['title_attributes']['class'][] = strtolower($css_title);
+}
+
+/**
+* Implements hook_preprocess_HOOK() for menu.html.twig.
+*/
+function eg_learn_preprocess_menu(&$variables) {
+  if ($variables['menu_name'] == 'main') { 
+   
+   //kint($variables);
+     
+  }
+}
+
+function eg_learn_preprocess_block__who1(&$variables) {
+  //kint($variables);
+ // $variables['items'] = new Drupal\Core\Template\Attribute($variables['items']);
+  //$variables['attributes']->addClass('block');
+}
+
+function eg_learn_preprocess_block(&$variables) {
+
+  $block=$variables['attributes'];
+  if($block['id']== 'block-who1') {
+      //kint($variables);
+
+  }
+  
+  
+}
+
+function YOURMODULE_preprocess_block(&$variables) {
+  $variables['classes_array'][] = drupal_html_class('your-custom-class');
+}
+/*
+Hook_preprocess_views_view_fields
+Document: https://api.drupal.org/api/drupal/core%21modules%21views%21views.theme.inc/function/template_preprocess_views_view_fields/8.2.x
+
+*/
+function game_preprocess_views_view_fields(&$vars, $suggestions){
+     
+    $view = $vars['view'];
+    if($view->id() == 'home'){
+    // //    $vars['classes_array'] = 'my-conditionally-added-class';
+    $field=$vars['fields'];
+      // foreach ($vars['fields'] as $id => $field) {
+      // kint($vars['row']);
+        //if ($id == "title") {
+          // echo $vars['fields'][$id]->content;
+          // kint($field);
+        //}
+        // switch($field){
+        //   case 'title':
+        //     kint($field);
+        //     break;
+        // }
+		  }
+    
+    // } 
+
+   
+}
+/* Add hook preprocess view view FIELD*/
+// function hook_preprocess_views_view_field(&$variables) {
+//   $view = $variables['view'];
+//   $field = $variables['field'];
+//   if ($view->storage->id() == 'view_name' &&
+//   $view->current_display == 'view_display_id' &&
+//   $field->field == 'field_name') {
+//     $variables['output'] = 'News output';
+// }
+
+
+/**
+  *insert variables into page template.
+  * style layout for all page
+  */
+  
+
+  /**
+ * Implements template_preprocess_html().
+ */
+// function game_preprocess_html(&$variables) {
+
+//   if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+//     $variables['attributes']['class'][] = 'two-sidebars';
+//   }
+//   elseif (!empty($variables['page']['sidebar_first']) || !empty($variables['page']['sidebar_second'])) {
+//     $variables['attributes']['class'][] = 'one-sidebar';
+//   }
+//   else {
+//     $variables['attributes']['class'][] = 'no-sidebars';
+//   }
+
+//   if (!empty($variables['page']['sidebar_first']) && empty($variables['page']['sidebar_second'])) {
+//     $variables['attributes']['class'][] = 'one-sidebar-left';
+//   }
+//   elseif (empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+//     $variables['attributes']['class'][] = 'one-sidebar-right';
+//   }
+// }
+
+/**
+ * Implements template_preprocess_block().
+ */
+// function game_preprocess_block(&$variables) {
+
+//   $variables['attributes']['class'][] = 'block';
+//   $variables['title_attributes']['class'][] = 'block-title';
+
+// }
+
+/**
+ * Implements template_preprocess_page().
+ */
+// function danland_preprocess_page(&$variables) {
+
+//   $variables['danland_layout'] = new Attribute();
+//   $variables['danland_layout']['id'] = [];
+
+//   if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+//     $variables['danland_layout']['id'][] = 'layout-type-2';
+//   }
+//   elseif (!empty($variables['page']['sidebar_first']) || !empty($variables['page']['sidebar_second'])) {
+//     $variables['danland_layout']['id'][] = 'layout-type-1';
+//   }
+// }

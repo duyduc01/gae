@@ -1,0 +1,8 @@
+{{ trans }}
+  {% if results.rate_count|default == 0 or results.rate_count|default is empty %}
+    Your vote would be valuable for our community.
+  {% else %}
+  
+    {{ results.rate_count }} votes with an average rating of {{ results.rate_average }}.
+  {% endif %}
+{{ endtrans }}

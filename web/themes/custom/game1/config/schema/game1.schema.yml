@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the GAME  theme.
+
+game1.settings:
+  type: theme_settings
+  label: 'game1 settings'

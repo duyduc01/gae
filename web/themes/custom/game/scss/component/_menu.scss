@@ -1,0 +1,97 @@
+/*
+ * Sample SCSS for adding Superfish CSS to themes.
+ *
+ * Instructions:
+ *
+ * 1. Change the #YOUR-BLOCK-ID (below) to the ID of your Superfish block.
+ *
+ * 2. Add the SCSS to your theme.
+ *
+ * 3. Note that by removing the .sf-style-none, the style will be applied to
+ *    the menu regardless of the "Style" selected in the Superfish
+ *    block configuration.
+ *
+ */
+
+// You can add these variables to your _base.scss
+$superfish-1-color: linear-gradient(180deg,#f5e765,#fad94d 41%,#ffbe00);
+$superfish-1-background-color-level-first: linear-gradient(180deg,#f5e765,#fad94d 41%,#ffbe00);
+$superfish-1-background-color-level-second: linear-gradient(180deg,#f5e765,#fad94d 41%,#ffbe00);
+$superfish-1-background-color-level-third: linear-gradient(180deg,#f5e765,#fad94d 41%,#ffbe00);
+$superfish-1-background-color-level-fourth: linear-gradient(180deg,#f5e765,#fad94d 41%,#ffbe00);
+$superfish-1-background-color-hover: linear-gradient(184deg, #fac302, #ffce00 41%, #ffa300);
+
+#block-mainnavigation {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    #superfish-main {
+      ul{
+        width: 5.5em !important;
+        margin-top: 7px;
+      }
+      padding-left: 0;
+      li{
+        background: none;
+        border-right: 0.5px solid #2a455d;
+        &:first-child>a.sf-depth-1 {
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;  
+        }
+        &:last-child >a.sf-depth-1{
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        // style submenu
+        &.sf-depth-1.menuparent.sfHover{
+          ul{
+              width: 84px !important;
+              margin: 0px;
+              a.sf-depth-2{
+                border-radius: 1px;
+                border: 1px solid #f79f04;
+                padding: 10px;
+              }
+            }
+          }
+        }
+      }
+      span.nolink {
+        background: $superfish-1-color;
+        padding: 12px;
+        text-shadow: none;
+        &.sf-with-ul {
+          padding-right: 2.25em;
+        }
+        &:hover {
+          background: $superfish-1-background-color-hover;
+          outline: 0;
+        }
+        .sf-sub-indicator {
+          background-image: url('../images/dropdown-arrows.png');
+        }
+      }
+      a {
+        background: $superfish-1-background-color-level-first;
+        padding: 12px;
+        text-shadow: none;
+        &:focus {
+          background: $superfish-1-background-color-hover;
+          outline: 0;
+        }
+        &:hover {
+          background: $superfish-1-background-color-hover;
+          outline: 0;
+          text-decoration: none;
+        }
+        &.active {
+          background: $superfish-1-background-color-hover;
+          outline: 0;
+        }
+        &.is-active {
+          background: $superfish-1-background-color-hover;
+          outline: 0;
+        }
+      }
+    }

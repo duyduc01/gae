@@ -1,0 +1,138 @@
+/*
+ * Style css for slick carousel
+ *
+ * Instructions:
+ *
+ *-NODE
+ *-slick title
+ *--slick list
+ *--slick arrow
+ */
+.slick{
+  .slick-list.draggable{
+    margin: 0px 20px;
+    .slick-track
+    {
+        display: flex !important;
+    }
+  } 
+
+    .slick__slide > div { 
+      height: 100%; 
+    }
+    .slick-dots button{
+      display: none;  
+    }
+  .slick-arrow{
+    &::before{
+      opacity: 0;
+    }
+    &.slick-prev{
+      opacity: 0.3;
+      background-position: 75%;
+      background-image: url(../images/previous.svg);
+      position: absolute;
+      color: transparent;
+      width: 50px;
+      height: 104px;
+      background-repeat: no-repeat;
+      color: transparent;
+      border: 0;
+      z-index: 1;
+      border-radius: 0;
+      outline-color: initial;
+      outline-style: none;
+      outline-width: 0;
+      left: -28px;
+      &:hover{
+        opacity: 1;
+        transition: opacity .25s ease,background-color .25s ease;
+      }
+    }
+    &.slick-next{
+      opacity: 0.3;
+      background-image: url(../images/next.svg);
+      background-position: 30%;
+      /* top: -20px; */
+      right: -10px;
+      position: absolute;
+      color: transparent;
+      width: 50px;
+      height: 104px;
+      background-repeat: no-repeat;
+      color: transparent;
+      border: 0;
+      z-index: 1;
+      border-radius: 0;
+      outline-color: initial;
+      outline-style: none;
+      outline-width: 0;
+      &:hover{
+        opacity: 1;
+        transition: opacity .25s ease,background-color .25s ease;
+      }
+    }
+  }
+}
+
+    //-- Node suggestion
+    .view-game-detail.view-display-id-block_1{
+      .view-header{
+        background-color: unset;
+        .game--suggestion--title{
+          font-size: 14px;
+          color: #fff;
+          margin-bottom: 5px;
+          font-weight: initial;
+        }
+      }
+      
+    //style carousel width
+      .view-content{
+        width: 500px;
+        .slick-list{
+          // width: 500px;
+          margin: 0px 0px 0px 25px;
+          .views-field-title{
+            align-items: center;
+            justify-content: center;
+            visibility: hidden;
+            width: 83px;
+            text-align: center;
+            height: 50px;
+            display: flex;
+            border: 1px solid #2c6792;
+            font-size: 15px;
+            word-wrap: break-word;
+            padding: 0px 0px 0px 2px;
+            a{
+              color: #fff;
+            }
+          }
+          .views-field-field-service1-image{
+            opacity: 1;
+            position: absolute;
+          }
+          .slick-slide.slick-active:hover{
+            .views-field-field-service1-image{
+              opacity: 0.3;
+              z-index: 1;
+            }
+            .views-field-title{
+              visibility: visible;
+              z-index: 2;
+            }
+          }
+        }
+        
+        .slick__arrow button{
+          height: 20px;
+          &.slick-prev{
+            left: -20px;
+          }
+          &.slick-next{
+            right: -30px;
+          }
+        }
+      }
+    }

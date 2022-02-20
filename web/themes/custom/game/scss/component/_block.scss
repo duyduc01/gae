@@ -1,0 +1,83 @@
+
+//----HOME-----
+.view {
+//-MAIN---Main content
+
+  //-MANIN--------New game
+  .view-header{
+    border: none;
+    background-color: #2c6792;
+    padding: 4px 6px 5px 8px;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 1.4rem;
+    margin: 4px 0px 0px 0px;
+    .home-block--title{
+        color: #fff;
+        position: relative;
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
+    }
+  }
+  .view-content{
+    .block-content div{
+      color: #fff;
+      font-size: 16px;
+      font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
+      line-height: 30px;
+      margin: 10px;
+    }
+  }
+
+
+  .view-footer{
+    padding: 15px 0px 0px 0px;
+  }
+}
+//----NODE-----
+.view-id-game_detail.view-display-id-block_3{
+  //Node title
+    .view-content{
+      .views-field.views-field-title{
+          position: relative;
+          .node--title{
+            border-bottom: 2px solid #47a6ff;
+            font-size: 25px;
+            color: #fff;
+            margin-bottom: 5px;
+            font-family: monospace;
+            text-transform: uppercase;
+          }
+  
+      }
+
+    }
+    .view-footer{
+      padding: 0px;
+    }
+  
+    //--Block node content
+    .view-id-game_detail.view-display-id-block_2{
+      .instruction{
+        margin-bottom: 30px;
+      }
+      //--game instruction
+      .instruction--title ,.tip--title{
+        font-size: 25px;
+        color: #fff;
+        margin-bottom: 16px;
+        font-family: monospace;
+        text-transform: uppercase;
+      }
+      .instruction--content>p,.tip--content>p{
+        color: #fff;
+        line-height: 25px;
+        font-size: 16px;
+      }
+    }
+    
+      
+  
+  }

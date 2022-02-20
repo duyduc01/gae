@@ -1,0 +1,29 @@
+// Compile ./scss/style.scss to ./css/style.css
+// Default variables.
+@import "default-variables";
+
+// Bootstrap Framework.
+@import '../bootstrap/assets/stylesheets/bootstrap';
+
+// Base-theme overrides.
+@import 'drupal-bootstrap';
+
+// Import personal scss file
+@import "base/reset-src";
+@import "base/base";
+// @import "base/header";
+@import "component/card5rows";
+@import "component/logo";
+@import "component/menu";
+@import "component/search";
+@import "component/block";
+// @import "component/node";
+@import "component/slick";
+@import "component/link";
+@import "component/iframe";
+@import "component/rating";
+
+// @import "component/menu";
+
+
+

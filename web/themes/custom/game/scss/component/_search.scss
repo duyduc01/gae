@@ -1,0 +1,32 @@
+/*
+ * Style css for search autocomplete
+ *
+ * Instructions:
+ *
+ * 1. Goto /Applications/MAMP/htdocs/modules/search_autocomplete/css/themes/yellow-green.css
+ *
+ * 2. Set display: block for autocomplete => Style new theme.css
+ *
+ *
+ */
+.navbar-header{
+  div.search-block-form{
+      float: right;
+      width: 300px;
+      div.input-group{
+          input.form-search{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+          .button.form-submit{
+              background: none;
+              border: none;
+              right: 33px;
+              color: #555555;
+              z-index: 1000;
+              text-shadow: none;
+          }
+      }
+  }
+}
+

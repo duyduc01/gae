@@ -1,0 +1,50 @@
+
+//----NODE-----
+.view-id-game_detail.view-display-id-block_3{
+//Node title
+  .view-content{
+    //-- fivestar rate
+    .views-field.views-field-field-rating{
+      position: absolute;
+      right: -22px;
+      top: 18px;
+      color: #fff;
+      .views-label.views-label-field-rating{
+      padding-right: 20px;
+      }
+      .field-content{
+        float: right;
+        .select-wrapper::after{
+          display: none;
+        }
+      }
+    }
+  }
+
+  //--Block node content
+  .view-id-game_detail.view-display-id-block_2{
+    //--review result
+    .review{
+      margin-top: 10px;
+      color: yellow;
+      .review--star{
+        float: left;
+        margin-right: 5px;
+        font-size: 19px;
+      }
+      .review--star--value{
+        float: left;
+        color: yellow;
+        margin-right: 10px;
+        font-size: 19px;
+      }
+      .review--count{
+        color: #fff;
+        padding-top: 8px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+
