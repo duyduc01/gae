@@ -69,9 +69,10 @@ https://youtu.be/zj10WEnEWIo
     /web/profiles/contrib/
     /web/themes/contrib/
 ## git command basic
-    git init Tao local directory
-    git clone  Clone foler tu git web directory
-    git pull    Day file tu git web ve web local
+    git init #Tao local directory
+    git rev-parse --show-toplevel    #find local directory path=> basedgit on local run command git
+    git clone https://github.com/duyduc01/gae.git htdocs2  #Clone foler tu git web directory ve folder moi tao htdocs2
+    git pull    #Day file tu git web ve web local
     git add / git add .         Add file vao git
     git commit -m "first commit"     Commit file vao local reposity
     git remote add origin 'https://github.com/duyduc01/gae.git'   * add web repository
@@ -80,18 +81,27 @@ https://youtu.be/zj10WEnEWIo
     git push -u origin main        *Day file commit tu local repository len web repository
     git log         Check thong tin commit gan nhat
     git status      Check trang thai 
-    git brand <name branch>          Tao branch tren git
-           chuyen lenh sang branch de lam viec tiep
+    git branch <name branch>   OR git checkout -b <branch name>       *Tao branch tren git hoac tao branch va checkout tren branch do luon 
     git status --ignored   *check ignore file
     git check-ignore -v example.log   * check ignore file specific exp: git check-ignore -v <file name>
     git ls-files   *check file commit or not
     git ls-files --error-unmatch <file name>
-1. git init     * create local repository
-2. git status *check file commit status
-3. git add .    * add all files to local repository
-4. git status   
+git push -f origin master         # override the remote branch code with your local repo code. 
+git rm css/* --dry-run      #perform a "dry-run" first and see which files would be removed
+                # Git will ignore empty folders.
+git rm --cached -r foldername    #With --cached added to the Git folder remove command, the folder will not be deleted from the filesystem. If you leave the --cached option out, the you will delete both the Git folder and the folder on the local filesystem as well.
+
 ## restore drupal site with git
-1. git clone https://github.com/duyduc01/gae.git htdocs2
+1. 
+## rename branch locally
+git branch -m old_branch new_branch         # Rename branch locally    
+git push origin :old_branch                 # Delete the old branch    
+git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote
+## merge branch to master
+$ git add –A                            # add file to local branch
+$ git commit –m "Some commit message"   # add message to commit
+$ git checkout master                   # Switched to branch 'master'
+$ git merge new-branch                  # merge branch to master
 # terminal command
 1. pwd      *check path of folder running command
 2. ls       *check file in the folder running command
