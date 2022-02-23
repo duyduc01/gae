@@ -74,17 +74,24 @@ https://youtu.be/zj10WEnEWIo
     git pull    Day file tu git web ve web local
     git add / git add .         Add file vao git
     git commit -m "first commit"     Commit file vao local reposity
-    git push        Day file commit tu local repository len web repository
+    git remote add origin 'https://github.com/duyduc01/gae.git'   * add web repository
+    git checkout 'main'     * switch to other branch git checkout <name brach>
+    git branch -m master main    *rename branch
+    git push -u origin main        *Day file commit tu local repository len web repository
     git log         Check thong tin commit gan nhat
     git status      Check trang thai 
     git brand <name branch>          Tao branch tren git
-    git checkout <name brach>       chuyen lenh sang branch de lam viec tiep
+           chuyen lenh sang branch de lam viec tiep
     git status --ignored   *check ignore file
     git check-ignore -v example.log   * check ignore file specific exp: git check-ignore -v <file name>
+    git ls-files   *check file commit or not
+    git ls-files --error-unmatch <file name>
 1. git init     * create local repository
 2. git status *check file commit status
 3. git add .    * add all files to local repository
 4. git status   
+## restore drupal site with git
+1. git clone https://github.com/duyduc01/gae.git htdocs2
 # terminal command
 1. pwd      *check path of folder running command
 2. ls       *check file in the folder running command
