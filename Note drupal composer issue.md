@@ -89,7 +89,7 @@ https://youtu.be/zj10WEnEWIo
 git push -f origin master         # override the remote branch code with your local repo code. 
 git rm css/* --dry-run      #perform a "dry-run" first and see which files would be removed
                 # Git will ignore empty folders.
-git rm --cached -r foldername    #With --cached added to the Git folder remove command, the folder will not be deleted from the filesystem. If you leave the --cached option out, the you will delete both the Git folder and the folder on the local filesystem as well.
+git rm --cached -r foldername    #With --cached added to the Git folder remove command, the folder will not be deleted from the filesystem. If you leave the --cached option out, the you will delete both the Git folder and the folder on the local filesystem as well.git s
 
 ## restore drupal site with git
 1. 
