@@ -53,6 +53,7 @@ https://www.jeffgeerling.com/blog/2019/converting-non-composer-drupal-codebase-u
 https://stefvanlooveren.me/blog/how-upgrade-drupal-8-9-composer
 
         "drupal/core-recommended": "^8.8",
+export PATH=/Applications/MAMP/bin/php/php7.4.12/bin/:$PATH         #set php
 # install drush: 
      https://docs.drush.org/en/9.x/install/
      Install a site-local Drush and Drush Launcher.
@@ -68,6 +69,7 @@ https://youtu.be/zj10WEnEWIo
     /web/modules/contrib/
     /web/profiles/contrib/
     /web/themes/contrib/
+    /web/site
 ## git command basic
     git init #Tao local directory
     git rev-parse --show-toplevel    #find local directory path=> basedgit on local run command git
@@ -108,6 +110,7 @@ $ git merge new-branch                  # merge branch to master
 3. cd name-sub-folder 
 4. cd ../  *back to one level
 
+
 # Composer command: 
     https://drupalize.me/tutorial/use-composer-your-drupal-project?p=3233#composerize
     https://smartbees.co/blog/how-install-drupal-composer-practical-guide
@@ -117,12 +120,19 @@ $ git merge new-branch                  # merge branch to master
         Composer is not designed to manage JS, CSS or HTML framework assets. It is for PHP. Then come Composer plugins, and other workarounds to make Composer workflow easier. 
         https://git.drupalcode.org/project/blazy/-/blob/8.x-2.x/docs/COMPOSER.md
         
-* Install libraries CS, JS, HTML via composer:
-          Slick:  https://www.drupal.org/project/slick/issues/2855190#comment-13824992
-            -- write to Require section =>  run `composer update` or `composer update <package name>`. or  run composer update --lock right after manually editing the composer.json file (this is a general rule not related to Slick).
-            -- run composer install =>
+## Install libraries CS, JS, HTML via composer:
 
-        # Install module/theme:   composer require 'drupal/<modulename>:<version>'
+### for update a library of module
+    -- write to repositories section for a library
+        -- write to require section for the library name as <woocommerce/flexslider:~2.0 > => un `composer update` or `composer update <package name>`. or  run `composer update --lock` right after manually editing the composer.json file (this is a general rule not related to Slick).
+    OR --run composer require <package name>  *exp composer require woocommerce/flexslider:~2.0 
+### update drupal core
+    https://www.drupal.org/docs/updating-drupal/updating-drupal-core-via-composer
+    -- check require section drupal core recommended with <^ version>
+    -- run composer update drupal/core "drupal/core-*" --with-all-dependencies
+    -- drush updb * update db
+    -- drush cr * update cache
+### Install module/theme:   composer require 'drupal/<modulename>:<version>'
             composer require 'drupal/token:^1.5'
             composer require 'drupal/simple_fb_connect:~3.0'
                  

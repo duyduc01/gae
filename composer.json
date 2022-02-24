@@ -36,11 +36,23 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+              "name": "woocommerce/flexslider",
+              "version": "2.7.2",
+              "type": "drupal-library",
+              "source": {
+                "url": "https://github.com/woocommerce/FlexSlider.git",
+                "type": "git",
+                "reference": "2.7.2"
+                }
+            }
         }
     ],
     "require": {
         "composer/installers": "^1.2",
-        "slick/slick": "^1.9.0",
         "drupal/admin_toolbar": "2.5.0",
         "drupal/asset_injector": "2.8.0",
         "drupal/backup_migrate": "^5.0",
@@ -48,11 +60,11 @@
         "drupal/bootstrap": "3.23.0",
         "drupal/bootstrap_business": "^1.0@beta",
         "drupal/coffee": "^1.2",
-        "drupal/colorbox": "1.7.0",
+        "drupal/colorbox": "^1.7.0",
         "drupal/colorbox_inline": "^1.2",
         "drupal/colorbox_load": "^1.2",
-        "drupal/core-project-message": "^8.8",
         "drupal/core-composer-scaffold": "^8.8",
+        "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^9.0.0",
         "drupal/ctools": "^3.7",
         "drupal/danland": "^1.1",
@@ -85,8 +97,9 @@
         "drupal/views_bootstrap": "^4.3",
         "drupal/votingapi": "^3.0@beta",
         "drush/drush": "10.*",
-        "jackmoore/colorbox": "^1.6"
-
+        "jackmoore/colorbox": "^1.6",
+        "slick/slick": "^1.9.0",
+        "woocommerce/flexslider": "~2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
