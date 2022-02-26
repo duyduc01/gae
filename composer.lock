@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c575262f0784bb327130da8de3e3e55",
+    "content-hash": "bc694c0d7f9d7f97238f34b7f2b1220e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4442,73 +4442,6 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
-            }
-        },
-        {
-            "name": "drupal/token_custom",
-            "version": "1.0.0-alpha3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/token_custom.git",
-                "reference": "8.x-1.0-alpha3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token_custom-8.x-1.0-alpha3.zip",
-                "reference": "8.x-1.0-alpha3",
-                "shasum": "b5f0e59a40639c4eb6c845b3906745caad05b165"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9",
-                "drupal/token": "^1.1"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-alpha3",
-                    "datestamp": "1608490204",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Adrian Bateman",
-                    "homepage": "https://drupal.org/u/polynya",
-                    "email": "adrian@polynya.co.uk",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "aaron23",
-                    "homepage": "https://drupal.org/u/aaron23",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "gaspaio",
-                    "homepage": "https://drupal.org/u/gaspaio",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "hanoii",
-                    "homepage": "https://drupal.org/u/hanoii",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "See contributors",
-                    "homepage": "https://www.drupal.org/node/325268/committers"
-                }
-            ],
-            "description": "Allow users to define custom tokens to use thoughout the site.",
-            "homepage": "http://drupal.org/project/token_custom",
-            "support": {
-                "source": "http://cgit.drupalcode.org/token_custom",
-                "issues": "http://drupal.org/project/token_custom"
             }
         },
         {
@@ -9648,7 +9581,6 @@
         "drupal/entity_clone": 10,
         "drupal/fivestar": 15,
         "drupal/libraries": 10,
-        "drupal/token_custom": 15,
         "drupal/votingapi": 10
     },
     "prefer-stable": true,

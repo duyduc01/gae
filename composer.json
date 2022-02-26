@@ -93,7 +93,6 @@
         "drupal/startupgrowth_lite": "^1.1",
         "drupal/superfish": "^1.4",
         "drupal/token": "^1.10",
-        "drupal/token_custom": "^1.0@alpha",
         "drupal/upgrade_status": "^3.13",
         "drupal/views_bootstrap": "^4.3",
         "drupal/votingapi": "^3.0@beta",
