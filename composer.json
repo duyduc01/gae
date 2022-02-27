@@ -72,6 +72,7 @@
         "drupal/entity": "^1.2",
         "drupal/entity_clone": "^1.0@beta",
         "drupal/field_formatter_class": "^1.5",
+        "drupal/filefield_paths": "^1.0@beta",
         "drupal/fivestar": "^1.0@alpha",
         "drupal/flexslider": "^2.0",
         "drupal/fontawesome": "^2.19",
