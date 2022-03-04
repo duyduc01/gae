@@ -19,7 +19,7 @@ Instruction
  * Implements hook_theme_suggestions_HOOK_alter()
  */
 
- function eg_learn_theme_suggestions_page_alter(&$suggestions, $variables) {
+ function game_theme_suggestions_page_alter(&$suggestions, $variables) {
   //kint($suggestions);
 }
 
@@ -170,3 +170,33 @@ function game_preprocess_views_view_fields(&$vars, $suggestions){
 //     $variables['danland_layout']['id'][] = 'layout-type-1';
 //   }
 // }
+
+/**
+ * Allows to override Colorbox settings and style.
+ *
+ * Implements hook_colorbox_settings_alter().
+ *
+ * @param array $settings
+ *   An associative array of Colorbox settings. See the.
+ * @param string $style
+ *   The name of the active style plugin. If $style is 'none', no Colorbox
+ *   theme will be loaded.
+ *
+ * @link
+ *    http://colorpowered.com/colorbox/ Colorbox documentation.
+ * @endlink
+ *   for the full list of supported parameters.
+ *
+ * @codingStandardsIgnoreStart
+ */
+function game_colorbox_settings_alter(&$settings, &$style) {
+  // @codingStandardsIgnoreEnd
+  // Disable automatic downscaling of images to maxWidth/maxHeight size.
+  //$settings['scalePhotos'] = FALSE;
+ kint($settings);
+
+  // Use custom style plugin specifically for node/123.
+  // if (current_path() == 'node/123') {
+  //   $style = 'mystyle';
+  // }
+}

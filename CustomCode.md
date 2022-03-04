@@ -77,3 +77,7 @@ include_once(DRUPAL_ROOT . './../vendor/kint-php/kint/src/Kint.php');
   if (class_exists('Kint')) {
     Kint::$max_depth = 3;
    } 
+
+
+# search api, class of a module
+https://www.google.com/search?q=api+refernce+for+colorbox&oq=api+refernce+for+colorbox&aqs=chrome..69i57j69i64.9421j0j4&sourceid=chrome&ie=UTF-8
