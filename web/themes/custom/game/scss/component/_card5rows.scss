@@ -61,7 +61,9 @@ Grid 5 rows
     }
   }
 }
-.view.view-game-new{
+
+/* View taxonomy term*/
+.view.view-game-new, .view.view-taxonomy-term{
   .card--item.set-height .card--item--container{
     margin: 0px 0px 10px 0px;
     .card--thumnail {

@@ -8604,15 +8604,16 @@ Grid 5 rows
   display: inline-block;
 }
 
-.view.view-game-new .card--item.set-height .card--item--container {
+/* View taxonomy term*/
+.view.view-game-new .card--item.set-height .card--item--container, .view.view-taxonomy-term .card--item.set-height .card--item--container {
   margin: 0px 0px 10px 0px;
 }
 
-.view.view-game-new .card--item.set-height .card--item--container .card--thumnail {
+.view.view-game-new .card--item.set-height .card--item--container .card--thumnail, .view.view-taxonomy-term .card--item.set-height .card--item--container .card--thumnail {
   width: 15%;
 }
 
-.view.view-game-new .card--item.set-height .card--item--container .card--body {
+.view.view-game-new .card--item.set-height .card--item--container .card--body, .view.view-taxonomy-term .card--item.set-height .card--item--container .card--body {
   width: 85%;
 }
 

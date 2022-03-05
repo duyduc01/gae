@@ -60,12 +60,14 @@ export PATH=/Applications/MAMP/bin/php/php7.4.12/bin/:$PATH         #set php
 # update module by composer
 https://www.drupal.org/docs/updating-drupal/updating-modules-and-themes-using-composer
 
+composer update drupal/pathauto --with-dependencies --dry-run
+
 # enable module by drush
     https://docs.acquia.com/resource/module-install-d9/
     Using the cd command, navigate to your website’s docroot directory.
     drush en pathauto           * run drush en [module_name] 
 
-composer update drupal/pathauto --with-dependencies --dry-run
+
 # install drush: 
      https://docs.drush.org/en/9.x/install/
      Install a site-local Drush and Drush Launcher.
