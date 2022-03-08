@@ -84,3 +84,10 @@ https://www.google.com/search?q=api+refernce+for+colorbox&oq=api+refernce+for+co
 
 # pathauto module
   Need to recheck the url alias recreate to update new url alias
+
+# game category structure
+strategy
+logic
+trivia
+number
+thinking
