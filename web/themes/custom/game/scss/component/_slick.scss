@@ -10,7 +10,7 @@
  */
 .slick{
   .slick-list.draggable{
-    margin: 0px 20px;
+    // margin: 0px 20px;
     .slick-track
     {
         display: flex !important;
@@ -23,116 +23,162 @@
     .slick-dots button{
       display: none;  
     }
+  .slick__arrow{
+    height: 100%;
+    margin: 0px;
+  }
   .slick-arrow{
+    height: 100%;
+    margin: 0px;
+    button{
+      visibility: hidden;
+      
+    }
     &::before{
       opacity: 0;
     }
     &.slick-prev{
-      opacity: 0.3;
-      background-position: 75%;
-      background-image: url(../images/previous.svg);
-      position: absolute;
-      color: transparent;
-      width: 50px;
-      height: 104px;
-      background-repeat: no-repeat;
-      color: transparent;
-      border: 0;
-      z-index: 1;
-      border-radius: 0;
-      outline-color: initial;
-      outline-style: none;
-      outline-width: 0;
-      left: -28px;
+      
       &:hover{
         opacity: 1;
         transition: opacity .25s ease,background-color .25s ease;
+        background-color: #2a455d;
+        background-position: 50%;
+        background-image: url(../images/previous.svg);
+        position: absolute;
+        color: transparent;
+        height: 100%;
+        background-repeat: no-repeat;
+        color: transparent;
+        border: 0;
+        z-index: 1;
+        border-radius: 0;
+        outline-color: initial;
+        outline-style: none;
+        outline-width: 0;
+        left: -15px;
+        visibility: visible;
       }
     }
     &.slick-next{
-      opacity: 0.3;
-      background-image: url(../images/next.svg);
-      background-position: 30%;
-      /* top: -20px; */
-      right: -10px;
-      position: absolute;
-      color: transparent;
-      width: 50px;
-      height: 104px;
-      background-repeat: no-repeat;
-      color: transparent;
-      border: 0;
-      z-index: 1;
-      border-radius: 0;
-      outline-color: initial;
-      outline-style: none;
-      outline-width: 0;
       &:hover{
+        right: -12px;
         opacity: 1;
         transition: opacity .25s ease,background-color .25s ease;
+        background-color: #2a455d;
+        background-position: 60%;
+        background-image: url(../images/next.svg);
+        position: absolute;
+        color: transparent;
+        height: 100%;
+        background-repeat: no-repeat;
+        color: transparent;
+        border: 0;
+        z-index: 1;
+        border-radius: 0;
+        outline-color: initial;
+        outline-style: none;
+        outline-width: 0;
+        visibility: visible;
       }
     }
   }
 }
 
-    //-- Node suggestion
-    .view-game-detail.view-display-id-block_1{
-      .view-header{
-        background-color: unset;
-        .game--suggestion--title{
-          font-size: 14px;
-          color: #fff;
-          margin-bottom: 5px;
-          font-weight: initial;
-        }
+//-- Home
+.view-home{
+  .slick-list{
+    .slick__slide.slide{
+      border-radius: 6px;
+      overflow: hidden;
+      margin: 0px 3px;
+      .views-field.views-field-title{
+        display: none;
+        position: absolute;
       }
       
-    //style carousel width
-      .view-content{
-        width: 500px;
-        .slick-list{
-          // width: 500px;
-          margin: 0px 0px 0px 25px;
-          .views-field-title{
-            align-items: center;
-            justify-content: center;
-            visibility: hidden;
-            width: 83px;
-            text-align: center;
-            height: 50px;
-            display: flex;
-            border: 1px solid #2c6792;
-            font-size: 15px;
-            word-wrap: break-word;
-            padding: 0px 0px 0px 2px;
-            a{
-              color: #fff;
-            }
-          }
-          .views-field-field-service1-image{
-            opacity: 1;
-            position: absolute;
-          }
-          .slick-slide.slick-active:hover{
-            .views-field-field-service1-image{
-              opacity: 0.3;
-              z-index: 1;
-            }
-            .views-field-title{
-              visibility: visible;
-              z-index: 2;
-            }
-          }
-        }
-        
-        .slick__arrow button{
-          height: 20px;
-          &.slick-prev{
-            left: -20px;
-          }
-          &.slick-next{
-            right: -30px;
+      
+      &:hover{
+        border: 2px solid #47a6ff;
+        .views-field.views-field-title{
+          position: absolute;
+          top: 62px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: end;
+          font-size: 14px;
+          width: 100%;
+          flex-direction: column;
+          padding-left: 2px;
+          background: radial-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.3));
+          a{
+            color: #fff;
+            text-decoration: none;
           }
         }
       }
     }
+  }
+}
+
+//-- Node suggestion
+.view-game-detail.view-display-id-block_1{
+  .view-header{
+    background-color: unset;
+    .game--suggestion--title{
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 5px;
+      font-weight: initial;
+    }
+  }
+  
+//style carousel width
+  .view-content{
+    width: 500px;
+    .slick-list{
+      // width: 500px;
+      margin: 0px 0px 0px 25px;
+      .views-field-title{
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        width: 83px;
+        text-align: center;
+        height: 50px;
+        display: flex;
+        border: 1px solid #2c6792;
+        font-size: 15px;
+        word-wrap: break-word;
+        padding: 0px 0px 0px 2px;
+        a{
+          color: #fff;
+        }
+      }
+      .views-field-field-service1-image{
+        opacity: 1;
+        position: absolute;
+      }
+      .slick-slide.slick-active:hover{
+        .views-field-field-service1-image{
+          opacity: 0.3;
+          z-index: 1;
+        }
+        .views-field-title{
+          visibility: visible;
+          z-index: 2;
+        }
+      }
+    }
+    
+    .slick__arrow button{
+      height: 20px;
+      &.slick-prev{
+        left: -20px;
+      }
+      &.slick-next{
+        right: -30px;
+      }
+    }
+  }
+}

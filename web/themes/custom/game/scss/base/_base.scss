@@ -13,16 +13,22 @@ div.region.region-content{
 }
 
 // header
-.header-container{
-  background-color: #2a455d;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
+// .header-container{
+//   background-color: #2a455d;
+//   padding-bottom: 15px;
+//   margin-bottom: 20px;
+//   header.navbar{
+//       background-image: none;
+//       border: none;
+//       background-color: #2a455d;
+//   }
+// }
+
   header.navbar{
-      background-image: none;
-      border: none;
-      background-color: #2a455d;
+    background-image: none;
+    border: none;
+    background-color: #2a455d;
   }
-}
 
 //navbar header
 //----Style search block
@@ -35,4 +41,20 @@ div.region.region-content{
 //Footer
 .footer{
   border-top: 1px solid #5c5b5b;
+}
+
+@media (min-width:768px) {
+  .container{
+    width: 100%;
+  }
+}
+@media (min-width:992px) {
+  .container{
+    width: 100%;
+  }
+}
+@media (max-width:1200px) {
+  .container{
+    width: 100%;
+  }
 }

@@ -8515,13 +8515,7 @@ div.region.region-content {
   min-height: 600px;
 }
 
-.header-container {
-  background-color: #2a455d;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-}
-
-.header-container header.navbar {
+header.navbar {
   background-image: none;
   border: none;
   background-color: #2a455d;
@@ -8535,6 +8529,24 @@ div.region.region-content {
 
 .footer {
   border-top: 1px solid #5c5b5b;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
 }
 
 /*Stype card item 5 rows, 2 items per row
@@ -8805,7 +8817,6 @@ Grid 5 rows
 
 .view .view-header {
   border: none;
-  background-color: #2c6792;
   padding: 4px 6px 5px 8px;
   border-radius: 10px;
   height: 30px;
@@ -8879,10 +8890,6 @@ Grid 5 rows
  *--slick list
  *--slick arrow
  */
-.slick .slick-list.draggable {
-  margin: 0px 20px;
-}
-
 .slick .slick-list.draggable .slick-track {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -8897,45 +8904,34 @@ Grid 5 rows
   display: none;
 }
 
-.slick .slick-arrow::before {
-  opacity: 0;
+.slick .slick__arrow {
+  height: 100%;
+  margin: 0px;
 }
 
-.slick .slick-arrow.slick-prev {
-  opacity: 0.3;
-  background-position: 75%;
-  background-image: url(../images/previous.svg);
-  position: absolute;
-  color: transparent;
-  width: 50px;
-  height: 104px;
-  background-repeat: no-repeat;
-  color: transparent;
-  border: 0;
-  z-index: 1;
-  border-radius: 0;
-  outline-color: initial;
-  outline-style: none;
-  outline-width: 0;
-  left: -28px;
+.slick .slick-arrow {
+  height: 100%;
+  margin: 0px;
+}
+
+.slick .slick-arrow button {
+  visibility: hidden;
+}
+
+.slick .slick-arrow::before {
+  opacity: 0;
 }
 
 .slick .slick-arrow.slick-prev:hover {
   opacity: 1;
   -webkit-transition: opacity .25s ease,background-color .25s ease;
   transition: opacity .25s ease,background-color .25s ease;
-}
-
-.slick .slick-arrow.slick-next {
-  opacity: 0.3;
-  background-image: url(../images/next.svg);
-  background-position: 30%;
-  /* top: -20px; */
-  right: -10px;
+  background-color: #2a455d;
+  background-position: 50%;
+  background-image: url(../images/previous.svg);
   position: absolute;
   color: transparent;
-  width: 50px;
-  height: 104px;
+  height: 100%;
   background-repeat: no-repeat;
   color: transparent;
   border: 0;
@@ -8944,12 +8940,67 @@ Grid 5 rows
   outline-color: initial;
   outline-style: none;
   outline-width: 0;
+  left: -15px;
+  visibility: visible;
 }
 
 .slick .slick-arrow.slick-next:hover {
+  right: -12px;
   opacity: 1;
   -webkit-transition: opacity .25s ease,background-color .25s ease;
   transition: opacity .25s ease,background-color .25s ease;
+  background-color: #2a455d;
+  background-position: 60%;
+  background-image: url(../images/next.svg);
+  position: absolute;
+  color: transparent;
+  height: 100%;
+  background-repeat: no-repeat;
+  color: transparent;
+  border: 0;
+  z-index: 1;
+  border-radius: 0;
+  outline-color: initial;
+  outline-style: none;
+  outline-width: 0;
+  visibility: visible;
+}
+
+.view-home .slick-list .slick__slide.slide {
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0px 3px;
+}
+
+.view-home .slick-list .slick__slide.slide .views-field.views-field-title {
+  display: none;
+  position: absolute;
+}
+
+.view-home .slick-list .slick__slide.slide:hover {
+  border: 2px solid #47a6ff;
+}
+
+.view-home .slick-list .slick__slide.slide:hover .views-field.views-field-title {
+  position: absolute;
+  top: 62px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: end;
+  font-size: 14px;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2px;
+  background: radial-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.3));
+}
+
+.view-home .slick-list .slick__slide.slide:hover .views-field.views-field-title a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .view-game-detail.view-display-id-block_1 .view-header {
@@ -9024,13 +9075,12 @@ Grid 5 rows
 
 .link--see {
   border: none;
-  color: #8fcbed;
+  color: #29bffd;
   font-size: 14px;
   text-transform: capitalize;
   font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
   font-weight: 400;
   text-decoration: none;
-  float: right;
   margin: 4px 0px 0px 0px;
 }
 

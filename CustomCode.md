@@ -91,3 +91,11 @@ logic
 trivia
 number
 thinking
+random
+playlist
+all games a-z
+
+# compile scss and live reload with css changed
+https://www.youtube.com/watch?v=crE3lcy_gW0 
+## live reload  
+1. need config generated sourced map to see the orginal file scss while inspect
