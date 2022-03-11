@@ -9,45 +9,38 @@
  *--slick arrow
  */
 .slick{
-  .slick-list.draggable{
-    // margin: 0px 20px;
-    .slick-track
-    {
-        display: flex !important;
-    }
-  } 
+  .slick-dotted.slick-slider{
+    margin:0px 20px 0px 5px;
 
-    .slick__slide > div { 
-      height: 100%; 
-    }
+    //- style dot button page
     .slick-dots button{
       display: none;  
     }
+  }
+
+  //-style arrow next previous
   .slick__arrow{
     height: 100%;
     margin: 0px;
-  }
-  .slick-arrow{
-    height: 100%;
-    margin: 0px;
-    button{
-      visibility: hidden;
-      
-    }
-    &::before{
-      opacity: 0;
-    }
-    &.slick-prev{
-      
-      &:hover{
-        opacity: 1;
+    .slick-arrow{
+      // height: 100%;
+      // margin: 0px;
+      button{
+        visibility: hidden;
+        
+      }
+      &::before{
+        opacity: 0;
+      }
+      &.slick-prev{
+        opacity: 0.1;
         transition: opacity .25s ease,background-color .25s ease;
-        background-color: #2a455d;
+        // background-color: #2a455d;
         background-position: 50%;
         background-image: url(../images/previous.svg);
         position: absolute;
         color: transparent;
-        height: 100%;
+        height: 102%;
         background-repeat: no-repeat;
         color: transparent;
         border: 0;
@@ -56,21 +49,24 @@
         outline-color: initial;
         outline-style: none;
         outline-width: 0;
-        left: -15px;
+        left: -26px;
         visibility: visible;
+        background-size: 10px;
+        &:hover{
+          opacity: 1;
+          background-color: #2a455d;
+          background-size: 20px;
+        }
       }
-    }
-    &.slick-next{
-      &:hover{
+      &.slick-next{
         right: -12px;
-        opacity: 1;
+        opacity: 0.1;
         transition: opacity .25s ease,background-color .25s ease;
-        background-color: #2a455d;
         background-position: 60%;
         background-image: url(../images/next.svg);
         position: absolute;
         color: transparent;
-        height: 100%;
+        height: 102%;
         background-repeat: no-repeat;
         color: transparent;
         border: 0;
@@ -80,13 +76,22 @@
         outline-style: none;
         outline-width: 0;
         visibility: visible;
+        background-size: 10px;
+        &:hover{
+          opacity: 1;
+          background-color: #2a455d;
+          background-size: 20px;
+        }
       }
     }
   }
+  
+  
+  
 }
 
 //-- Home
-.view-home{
+.view-home.view-id-home, .view-home-playlist{
   .slick-list{
     .slick__slide.slide{
       border-radius: 6px;
@@ -96,7 +101,6 @@
         display: none;
         position: absolute;
       }
-      
       
       &:hover{
         border: 2px solid #47a6ff;
@@ -108,7 +112,7 @@
           -ms-flex-align: end;
           font-size: 14px;
           width: 100%;
-          flex-direction: column;
+          height:100%;
           padding-left: 2px;
           background: radial-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.3));
           a{
@@ -118,6 +122,16 @@
         }
       }
     }
+  }
+}
+
+.view-home-playlist{
+  .slick__slide.slide{
+    border-radius: none; 
+    &:hover{
+      border: none !important;
+    }
+    
   }
 }
 
