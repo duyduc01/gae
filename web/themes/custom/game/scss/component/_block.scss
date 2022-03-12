@@ -81,30 +81,37 @@
 
 //- category list page: view game new
 //-- use grid layout view
-.views-view-grid{ 
-  .views-col{
-    padding: 0px 5px;
+.blazy.blazy--view{ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  .grid{
+    margin: 2px;
       .views-field-field-service1-image{
       border-radius: 6px;
       overflow: hidden;
       position: relative;
+      border: 2px solid transparent;
       .img-responsive{
         width: 100%;
       }
     }
     .views-field-title{
-      position: relative;
-      top: -14px;
+      position: absolute;
+      bottom: 0px;
       font-size: 14px;
       width: 100%;
-      height: 100%;
       padding-left: 10px;
       background: radial-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.3));
-      visibility: hidden;
+      display: none;
     }
     &:hover{
+      .views-field-field-service1-image{
+        border: 2px solid $color-border;
+      }
       .views-field-title{
-        visibility: visible;
+        display: block;
         a{
           color: #fff;
         }

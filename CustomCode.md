@@ -99,3 +99,8 @@ all games a-z
 https://www.youtube.com/watch?v=crE3lcy_gW0 
 ## live reload  
 1. need config generated sourced map to see the orginal file scss while inspect
+
+## css
+1. position
+   1. absolute: not save orginal position
+   2. relative: save orginal position

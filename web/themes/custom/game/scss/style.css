@@ -8512,6 +8512,7 @@ a {
 
 div.region.region-content {
   margin-top: 20px;
+  min-height: 600px;
 }
 
 header.navbar {
@@ -8886,36 +8887,55 @@ Grid 5 rows
   font-size: 16px;
 }
 
-.views-view-grid .views-col {
-  padding: 0px 5px;
+.blazy.blazy--view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.views-view-grid .views-col .views-field-field-service1-image {
+.blazy.blazy--view .grid {
+  margin: 2px;
+}
+
+.blazy.blazy--view .grid .views-field-field-service1-image {
   border-radius: 6px;
   overflow: hidden;
   position: relative;
+  border: 2px solid transparent;
 }
 
-.views-view-grid .views-col .views-field-field-service1-image .img-responsive {
+.blazy.blazy--view .grid .views-field-field-service1-image .img-responsive {
   width: 100%;
 }
 
-.views-view-grid .views-col .views-field-title {
-  position: relative;
-  top: -14px;
+.blazy.blazy--view .grid .views-field-title {
+  position: absolute;
+  bottom: 0px;
   font-size: 14px;
   width: 100%;
-  height: 100%;
   padding-left: 10px;
   background: radial-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.3));
-  visibility: hidden;
+  display: none;
 }
 
-.views-view-grid .views-col:hover .views-field-title {
-  visibility: visible;
+.blazy.blazy--view .grid:hover .views-field-field-service1-image {
+  border: 2px solid #47a6ff;
 }
 
-.views-view-grid .views-col:hover .views-field-title a {
+.blazy.blazy--view .grid:hover .views-field-title {
+  display: block;
+}
+
+.blazy.blazy--view .grid:hover .views-field-title a {
   color: #fff;
 }
 
