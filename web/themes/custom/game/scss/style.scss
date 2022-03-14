@@ -10,8 +10,8 @@
 
 // Import personal scss file
 @import "base/reset-src";
-@import "base/base";
 @import "base/variable";
+@import "base/base";
 // @import "base/header";
 @import "component/card5rows";
 @import "component/logo";
@@ -23,6 +23,7 @@
 @import "component/link";
 @import "component/iframe";
 @import "component/rating";
+@import "component/pagination";
 
 // @import "component/menu";
 

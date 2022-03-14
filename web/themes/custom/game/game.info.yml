@@ -16,6 +16,7 @@ regions:
   content: 'Content'
   sidebar_first: 'Sidebar First'
   sidebar_second: 'Sidebar Second'
+  suggestion: 'suggestion'
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'

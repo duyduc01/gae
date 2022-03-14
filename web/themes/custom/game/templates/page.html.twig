@@ -122,14 +122,14 @@
       {# Content #}
       {%
         set content_classes = [
-          page.sidebar_first and page.sidebar_second ? 'col-sm-8',
+          page.sidebar_first and page.sidebar_second ? 'col-sm-7',
           page.sidebar_first and page.sidebar_second is empty ? 'col-sm-8',
           page.sidebar_second and page.sidebar_first is empty ? 'col-sm-8',
           page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
-
+        
         {# Highlighted #}
         {% if page.highlighted %}
           {% block highlighted %}
@@ -159,6 +159,16 @@
           </aside>
         {% endblock %}
       {% endif %}
+
+      {# NOTE: add more this section for node suggestion #}
+      {% if page.suggestion %}
+        {% block suggestion %}
+          <div class="col-sm-12" role="suggestion">
+            {{ page.suggestion }}
+          </div>
+        {% endblock %}
+      {% endif %}
+
     </div>
   </div>
 {% endblock %}

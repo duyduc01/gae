@@ -62,10 +62,20 @@ https://www.drupal.org/docs/updating-drupal/updating-modules-and-themes-using-co
 
 composer update drupal/pathauto --with-dependencies --dry-run
 
-# enable module by drush
+# enable/disable module by drush
     https://docs.acquia.com/resource/module-install-d9/
     Using the cd command, navigate to your website’s docroot directory.
     drush en pathauto           * run drush en [module_name] 
+
+    disable module
+    https://www.drupal.org/docs/extending-drupal/uninstalling-modules
+    drush pm-uninstall module_name
+
+    Or use the Drush alias:
+    drush pmu module_name
+
+    Next, clear cache using the Drush command:
+    drush cr
 
 
 # install drush: 

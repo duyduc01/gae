@@ -89,7 +89,7 @@ Grid 5 rows
   display: flex;
   flex-direction: row;
   &:hover {
-    background-color: #215174;
+    background-color: $color-hover-playlist;
   }
   a{
     width: 100%;

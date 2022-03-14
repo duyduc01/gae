@@ -104,3 +104,6 @@ https://www.youtube.com/watch?v=crE3lcy_gW0
 1. position
    1. absolute: not save orginal position
    2. relative: save orginal position
+
+2. Playvideo mp4 on hover
+   1. https://stackoverflow.com/questions/55477699/playing-video-and-showing-text-on-hovering-over-image
