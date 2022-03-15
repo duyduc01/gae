@@ -97,6 +97,7 @@
         "drupal/token": "^1.10",
         "drupal/upgrade_status": "^3.13",
         "drupal/views_bootstrap": "^4.3",
+        "drupal/vote_up_down": "^1.0@alpha",
         "drupal/votingapi": "^3.0@beta",
         "drush/drush": "10.*",
         "jackmoore/colorbox": "^1.6",

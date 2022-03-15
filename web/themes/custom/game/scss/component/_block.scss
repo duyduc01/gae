@@ -34,47 +34,35 @@
 
 }
 //----NODE-----
-.view-id-game_detail.view-display-id-block_3{
-  //Node title
-    .view-content{
-      .views-field.views-field-title{
-          position: relative;
-          .node--title{
-            border-bottom: 2px solid #47a6ff;
-            font-size: 25px;
-            color: #fff;
-            margin-bottom: 5px;
-            font-family: monospace;
-            text-transform: uppercase;
-          }
-  
-      }
+//--Layout node page
+//---- sidebar first
+.sidebar-first.col-sm-2{
+  width: 14%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px 0px 0px;
+}
 
-    }
-    .view-footer{
-      padding: 0px;
-    }
-  
-    //--Block node content
-    .view-id-game_detail.view-display-id-block_2{
-      .instruction{
-        margin-bottom: 30px;
-      }
-      //--game instruction
-      .instruction--title ,.tip--title{
-        font-size: 25px;
-        color: #fff;
-        margin-bottom: 16px;
-        font-family: monospace;
-        text-transform: uppercase;
-      }
-      .instruction--content>p,.tip--content>p{
-        color: #fff;
-        line-height: 25px;
-        font-size: 16px;
-      }
-    }
-    
+//--- main content
+.content.col-sm-7{
+  padding: 0px;
+}
+
+//---- sidebar second
+.sidebar-second.col-sm-3{
+  padding: 0px;
+  width: 27%;
+  margin: 20px 0px 0px 0px;
+}
+
+//--- game suggestion main
+.view-game-detail.view-id-game_detail{
+  margin: 20px 0px;
+  .view-content{
+    background: $color-header;
+  }
 }
 
 //- category list page: view game new

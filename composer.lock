@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5cea8a8bc1919a94b69318154cdff98d",
+    "content-hash": "a470f4e982e95f3192318a36b35d05f3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4684,6 +4684,56 @@
             "homepage": "https://www.drupal.org/project/views_bootstrap",
             "support": {
                 "source": "https://git.drupalcode.org/project/views_bootstrap"
+            }
+        },
+        {
+            "name": "drupal/vote_up_down",
+            "version": "1.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/vote_up_down.git",
+                "reference": "8.x-1.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/vote_up_down-8.x-1.0-alpha5.zip",
+                "reference": "8.x-1.0-alpha5",
+                "shasum": "67edc02362e115dc453eb52d8a0b12313aeedda9"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/votingapi": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha5",
+                    "datestamp": "1633232617",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jenlampton",
+                    "homepage": "https://www.drupal.org/user/85586"
+                },
+                {
+                    "name": "marvil07",
+                    "homepage": "https://www.drupal.org/user/132175"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/vote_up_down",
+            "support": {
+                "source": "https://git.drupalcode.org/project/vote_up_down"
             }
         },
         {
@@ -9689,6 +9739,7 @@
         "drupal/filefield_paths": 10,
         "drupal/fivestar": 15,
         "drupal/libraries": 10,
+        "drupal/vote_up_down": 15,
         "drupal/votingapi": 10
     },
     "prefer-stable": true,
