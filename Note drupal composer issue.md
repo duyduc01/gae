@@ -61,6 +61,8 @@ export PATH=/Applications/MAMP/bin/php/php7.4.12/bin/:$PATH         #set php
 https://www.drupal.org/docs/updating-drupal/updating-modules-and-themes-using-composer
 
 composer update drupal/pathauto --with-dependencies --dry-run
+composer update drupal/rate --with-dependencies --dry-run
+
 
 # enable/disable module by drush
     https://docs.acquia.com/resource/module-install-d9/

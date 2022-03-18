@@ -37,7 +37,7 @@
 //--Layout node page
 //---- sidebar first
 .sidebar-first.col-sm-2{
-  width: 14%;
+  width: 12%;
   padding: 0px;
   display: flex;
   flex-direction: column;
@@ -48,22 +48,78 @@
 //--- main content
 .content.col-sm-7{
   padding: 0px;
+  width: 66%;
 }
 
 //---- sidebar second
 .sidebar-second.col-sm-3{
   padding: 0px;
-  width: 27%;
+  width: 22%;
   margin: 20px 0px 0px 0px;
 }
 
 //--- game suggestion main
 .view-game-detail.view-id-game_detail{
-  margin: 20px 0px;
   .view-content{
+    margin: 15px 0px;
+  }
+  .view-display-id-block_2>.view-content{
     background: $color-header;
   }
+  //--iframe main play
+  &.view-display-id-block_3>.view-content{
+      margin: 15px 0px 0px 0px;
+      background: black;
+  }
+
+  //--iframe footer rating and button play, maximize
+  .view-display-id-block_6{
+    .view-content{
+      margin: 0px;
+      background: black;
+      padding: 20px 20px 10px 20px;
+      .views-row{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        //--- game title
+        .views-field-title{
+          margin-right: auto;
+          font-size: 20px;
+          font-weight: 600;
+          padding: 0px 20px;
+        }
+        //--- rating
+        .views-field-node-rate-widget-field{
+          padding: 0px 30px;
+          font-size: 15px;  
+        }
+        .views-field-node-rate-widget-field-1{
+          padding: 0px 20px;
+          font-size: 15px;
+          .thumbsupdown-rating-wrapper>div:first-child{
+            display: none;
+
+          }
+          
+        }
+        //--- button maximize and play
+        .views-field-field-font-icon{
+          .fontawesome-icons{
+            display: flex;
+            align-content: space-between;
+            justify-items: center;
+            font-size: 23px;
+            .fontawesome-icon{
+              padding: 0px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+  
 
 //- category list page: view game new
 //-- use grid layout view

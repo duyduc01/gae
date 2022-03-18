@@ -107,3 +107,14 @@ https://www.youtube.com/watch?v=crE3lcy_gW0
 
 2. Playvideo mp4 on hover
    1. https://stackoverflow.com/questions/55477699/playing-video-and-showing-text-on-hovering-over-image
+
+
+# composer and drush command most often
+  export PATH=/Applications/MAMP/bin/php/php7.4.12/bin/:$PATH         #set php
+  drush pm-uninstall module_name or drush pmu module_name
+  drush en module_name
+  ## update module by composer
+https://www.drupal.org/docs/updating-drupal/updating-modules-and-themes-using-composer
+
+composer update drupal/pathauto --with-dependencies --dry-run
+composer update drupal/rate --with-dependencies --dry-run
