@@ -63,9 +63,6 @@
   .view-content{
     margin: 15px 0px;
   }
-  .view-display-id-block_2>.view-content{
-    background: $color-header;
-  }
   //--iframe main play
   &.view-display-id-block_3>.view-content{
       margin: 15px 0px 0px 0px;
@@ -78,6 +75,7 @@
       margin: 0px;
       background: black;
       padding: 20px 20px 10px 20px;
+      position: relative;
       .views-row{
         display: flex;
         align-items: center;
@@ -97,27 +95,158 @@
         .views-field-node-rate-widget-field-1{
           padding: 0px 20px;
           font-size: 15px;
-          .thumbsupdown-rating-wrapper>div:first-child{
-            display: none;
-
-          }
+          // .thumbsupdown-rating-wrapper>div:first-child{
+          //   display: none;
+          // }
           
         }
         //--- button maximize and play
-        .views-field-field-font-icon{
+        .views-field-field-font-icon-1, .views-field-nothing>* .game-controls-button{
           .fontawesome-icons{
-            display: flex;
-            align-content: space-between;
-            justify-items: center;
+            padding: 0px 20px;
             font-size: 23px;
-            .fontawesome-icon{
-              padding: 0px 20px;
+          }
+        }
+        .views-field-field-font-icon-1 >* .fa-gamepad, .views-field-nothing >* .fa-compress{
+          display: none;
+        }
+
+
+        //--- controls - how to play desc
+        .views-field-nothing>* .game-controls-wrapper{
+          padding:10px;
+          &:hover{
+            .game-controls-pu{
+              display: block;
             }
+          }
+          .game-controls-pu{
+            bottom: 54px;
+            right: 0px;
+            width: 250px;
+            max-height: 200px;
+            overflow-y: scroll;
+            background-color: #215174;
+            word-wrap: break-word;
+            z-index: 3;
+            display: none;
+            position: absolute;
+            padding: 10px;
+            border-radius: 5px;
+            
+            p{
+              font-weight: 600;
+              margin: 15px 0px 20px 0px;
+              font-size: 20px;
+            }
+            &>p:first-child{
+              margin:5px 0px 20px 0px;
+            }
+            li{
+              margin: 10px 0px 0px 18px;
+              list-style: outside;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+
+  //-- game description
+  .view-display-id-block_2{
+    background: $color-header;
+    padding: 0px 0px 20px 20px;
+
+    //---- title
+    .game-title-wrapper{
+      display: flex;
+      flex-direction: row;
+      /* align-items: end; */
+      justify-content: end;
+      .game-title{
+        margin-right: auto;
+        font-size: 35px;
+        font-weight: 600;
+        padding: 20px 20px 20px 0px;
+      }
+      .game-sum-votes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #a3b5bd;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin: 0px 10px 0px 0px;
+        span{
+          margin: -5px;
+        }
+      }
+      .game-like-votes{
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin: 10px;
+        background-color: #fff;
+        font-weight: 600;
+        font-size: 20px;
+        color: #2a455d;
+      }
+    }
+    //--- description
+      .views-label-body , .views-label-field-how-to-play-desc{
+        font-size: 23px;
+        padding: 30px 0px;
+        display: block;
+      }
+
+      .field-content{
+        font-size: 20px;
+        line-height: 1.5em;
+        p{
+          margin: 15px 0px 20px 20px;
+          font-size: 20px;
+        }
+        li{
+          margin: 10px 0px 0px 40px;
+          list-style: outside;
+        }
+      }
+    //-- term suggestion
+    .view-display-id-block_1{
+      .view-content{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        gap: 10px;
+        .views-row{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          flex-direction: row;
+          border-radius: 20px;
+          border: 1px solid $color-hover-playlist;
+          background-color: $color-hover-playlist;
+          .views-field-field-avatar{
+            border-radius: 50%;
+            padding: 1px;
+            border: 1px solid black;
+            overflow: hidden;
+          }
+          .views-field-name a{
+            font-size: 15px;
+            padding: 0px 10px 0px 0px;
           }
         }
       }
     }
   }
+
+  
 }
   
 
