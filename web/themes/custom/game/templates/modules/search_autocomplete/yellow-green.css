@@ -1,0 +1,119 @@
+/*
+ * SEARCH AUTOCOMPLETE
+ * Custom Yellow green theme.
+ * 
+ */
+
+/**
+ * THEME YELLOW GREEN
+ */
+
+/* Input box */
+.js input.form-autocomplete {
+  border: 1px solid #ccc;
+}
+
+/* Suggestion menu style */
+ul[data-sa-theme="yellow-green"] {
+  box-shadow: rgba(0, 0, 0, 0.498039) 0 0 15px;
+  border-bottom: 1px solid #bfbfbf;
+  text-align: left;
+  font-family: 'Lucida Grande', Helvetica, Arial, Verdana, sans-serif;
+  min-width: 350px;
+  padding: 0px;
+  background-color: #16202c;
+}
+ul[data-sa-theme="yellow-green"] a.ui-menu-item-wrapper,
+ul[data-sa-theme="yellow-green"] a.ui-menu-item-wrapper.ui-state-active {
+  display: block;
+  background: none;
+  border: none;
+  text-decoration: none;
+}
+
+/* Suggestion menu elements */
+ul[data-sa-theme="yellow-green"] > *,
+ul[data-sa-theme="yellow-green"] > *.ui-state-focus,
+ul[data-sa-theme="yellow-green"] > *:hover {
+  /* border-color: #bfbfbf;
+  border-width: 1px 0 0 0;
+  border-style: solid; */
+  margin: 0;
+  padding: 5px 7px;
+}
+
+/* Suggestion group header */
+ul[data-sa-theme="yellow-green"] .ui-autocomplete-field-group {
+  opacity: 1;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 0px;
+  margin: 0;
+  display: block;
+}
+
+/* Suggestion menu items */
+ul[data-sa-theme="yellow-green"] > li.ui-menu-item {
+  background: none;
+}
+ul[data-sa-theme="yellow-green"] .ui-autocomplete-fields .ui-autocomplete-field-created {
+  display: flex;
+  align-items: center;
+  text-shadow: none;
+}
+ul[data-sa-theme="yellow-green"] .ui-autocomplete-fields .ui-autocomplete-field-created>img{
+  float: left;
+  width: 51px;
+}
+ul[data-sa-theme="yellow-green"] .ui-autocomplete-fields .ui-autocomplete-field-created>p{
+  font-size: 1em;
+  text-transform: none;
+  color: #29bffd;
+  font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
+  font-weight: 700;
+  padding-left: 10px;
+}
+/* Suggestion menu items hovering */ 
+ul[data-sa-theme="yellow-green"] .ui-menu-item.ui-state-focus,
+ul[data-sa-theme="yellow-green"] .ui-menu-item:hover {
+  background: #2c6792;
+}
+
+
+/* Searched term whithin a suggestion item */
+ul[data-sa-theme="yellow-green"] .ui-autocomplete-field-term {
+  font-weight: bold;
+  border-bottom: 1px dotted;
+}
+
+/* Suggestion item fields */
+ul[data-sa-theme="yellow-green"] .ui-autocomplete-fields > *:first-child {
+  font-weight: bold;
+  color: black;
+}
+ul[data-sa-theme="yellow-green"] .ui-autocomplete-fields > * {
+  font-size: 0.85em;
+  line-height: 1.3em;
+  color: #6f6f6f;
+  display: block;
+}
+
+/* Suggestion focused fields */
+ul[data-sa-theme="yellow-green"] > li.ui-menu-item.ui-state-focus .ui-autocomplete-fields > *,
+ul[data-sa-theme="yellow-green"] > li.ui-menu-item:hover .ui-autocomplete-fields > * {
+  text-decoration: none;
+}
+
+/* Suggestion "no result" and "more resul" customizations */
+ul[data-sa-theme="yellow-green"] > div.ui-autocomplete-field-group.no_results + li.ui-menu-item,
+ul[data-sa-theme="yellow-green"] > div.ui-autocomplete-field-group.more_results + li.ui-menu-item {
+  padding: 0;
+}
+ul[data-sa-theme="yellow-green"] > div.ui-autocomplete-field-group.no_results + li.ui-menu-item .ui-autocomplete-fields > *:first-child,
+ul[data-sa-theme="yellow-green"] > div.ui-autocomplete-field-group.more_results + li.ui-menu-item .ui-autocomplete-fields > *:first-child {
+  font-weight: normal;
+  text-align: center;
+  font-style: italic;
+}

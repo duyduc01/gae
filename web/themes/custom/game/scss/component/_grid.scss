@@ -1,0 +1,38 @@
+
+//- category list page: view game new
+//-- use grid layout view
+.blazy.blazy--view{ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  .grid{
+    margin: 2px;
+    padding: 0px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+      .views-field-field-service1-image{
+      // border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+      // border: 2px solid transparent;
+      .img-responsive{
+        width: 100%;
+      }
+    }
+    .views-field-title{
+      position: absolute;
+      bottom: 0px;
+      font-size: 14px;
+      width: 100%;
+      padding-left: 10px;
+      background: radial-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.3));
+      display: none;
+      a{
+        color: #fff;
+      }
+    }
+  }
+  
+}
+

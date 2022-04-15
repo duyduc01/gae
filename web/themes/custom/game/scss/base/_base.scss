@@ -5,6 +5,10 @@ body{
     color: $color-text;
     a{
       color: $color-link;
+      &:hover {
+        text-decoration: none;
+        color: $color-text;
+      }
     }
   }
  
@@ -48,4 +52,8 @@ div.region.region-content{
   .container{
     width: 100%;
   }
+}
+
+video{
+  display: none;
 }

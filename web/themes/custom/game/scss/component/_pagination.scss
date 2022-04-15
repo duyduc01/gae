@@ -15,7 +15,7 @@
       &:hover{
         background-color: $color-hover-playlist;
         color: #fff;
-        border: 1px solid $color-hover-border;
+        border: 1px solid transparent;
       }
     }
     

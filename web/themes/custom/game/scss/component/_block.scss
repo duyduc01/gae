@@ -30,9 +30,19 @@
     }
   }
 
-
-
 }
+
+/* Home game playlist*/
+.view-home-playlist{
+  .col-2{
+    padding: 0px 10px 0px 0px;
+  }
+}
+
+
+//----END HOME-----
+
+
 //----NODE-----
 //--Layout node page
 //---- sidebar first
@@ -229,8 +239,12 @@
           gap: 10px;
           flex-direction: row;
           border-radius: 20px;
-          border: 1px solid $color-hover-playlist;
-          background-color: $color-hover-playlist;
+          border: 1px solid $color-category;
+          background-color: $color-category;
+          &:hover {
+            background-color: $color-hover-playlist;
+            border-color: $color-hover-playlist;
+          }
           .views-field-field-avatar{
             border-radius: 50%;
             padding: 1px;
@@ -249,46 +263,79 @@
   
 }
   
+//----END NODE-----
 
-//- category list page: view game new
-//-- use grid layout view
-.blazy.blazy--view{ 
+//----Category block-----
+.playlist--item{
+  border: none;
+  // background-color: #2c6792;
+  background-color: $color-category;
+  border-radius: 4px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  .grid{
-    margin: 2px;
-    padding: 0px;
-      .views-field-field-service1-image{
-      border-radius: 6px;
-      overflow: hidden;
-      position: relative;
-      border: 2px solid transparent;
-      .img-responsive{
-        width: 100%;
-      }
+  // &:hover {
+  //   background-color: $color-hover-playlist;
+  //   border: 1px solid $color-hover-border !important;
+  // }
+  a{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .playlist--thumnail img{
+      min-width: 85px;
+      margin-right: 10px;
     }
-    .views-field-title{
-      position: absolute;
-      bottom: 0px;
-      font-size: 14px;
+    .playlist--title{
+      font-size: 11px;
+      line-height: 1.2rem;
+      font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
+      font-weight: 600;
       width: 100%;
-      padding-left: 10px;
-      background: radial-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.3));
-      display: none;
-    }
-    &:hover{
-      .views-field-field-service1-image{
-        border: 2px solid $color-hover-border;
-      }
-      .views-field-title{
-        display: block;
-        a{
-          color: #fff;
-        }
-      }
+      text-align: center;
     }
   }
-  
+
 }
+
+
+.slick--view--home-playlist {
+  .slick__slide.slide{
+    .playlist--item{
+      border: none;
+      // background-color: #2c6792;
+      background-color: $color-category;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: row;
+      a{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .playlist--thumnail img{
+          min-width: 85px;
+          margin-right: 10px;
+        }
+        .playlist--title{
+          font-size: 11px;
+          line-height: 1.2rem;
+          font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
+          font-weight: 600;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    
+    }
+    &:hover{
+      border-color: transparent !important;
+      .playlist--item{
+        background-color: $color-hover-playlist !important;
+      }
+    }
+    
+  }
+}
+
+

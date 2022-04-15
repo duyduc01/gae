@@ -2,7 +2,6 @@
 //----HOME-----
 .link--see{
   border: none;
-  color: #29bffd;
   font-size: 11px;
   text-transform: capitalize;
   font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
@@ -10,13 +9,11 @@
   text-decoration: none;
   margin: 0px 0px 0px 13px;
   &:hover, &:focus {
-    color: #8fcbed;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
 .link--more{
-  color: #29bffd;
   font-size: 14px;
   text-transform: capitalize;
   font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
@@ -24,7 +21,6 @@
   padding: 0px 0px 14px 0px;
   display: block;
   &:hover, &:focus {
-    color: #29bffd;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }

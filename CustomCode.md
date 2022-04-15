@@ -118,3 +118,34 @@ https://www.drupal.org/docs/updating-drupal/updating-modules-and-themes-using-co
 
 composer update drupal/pathauto --with-dependencies --dry-run
 composer update drupal/rate --with-dependencies --dry-run
+
+  ## hover image to play video
+  https://stackoverflow.com/questions/48768580/play-video-on-image-mouseover-causes-trempling-glitch
+
+  $(document).ready(function () {
+    $(".thumbnail").hover(function () {
+        $(this).children("video")[0].play();
+    }, function () {
+        var el = $(this).children("video")[0];
+        el.pause();
+        el.currentTime = 0;
+    });
+});
+
+
+  $('.viewer').mouseenter(function() {
+    var $el = $(this);
+    $el.find('.thumb').hide();
+    $el.find('video').show()[0].play();
+  }).mouseleave(function() {
+    var $el = $(this);
+    $el.find('.thumb').show();
+    $el.find('video').hide()[0].pause();
+  });
+
+  # Custom css file for search autocomplete
+  1. Directory backup: /Applications/MAMP/htdocs/web/themes/custom/game/templates/modules/search_autocomplete
+  
+  2. Directory require: /Applications/MAMP/htdocs/web/modules/contrib/search_autocomplete/css/themes/yellow-green.css
+
+3. View to show autocomplete: nodes_autocompletion_callbacks

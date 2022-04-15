@@ -7,7 +7,7 @@
  *
  * 2. Set display: block for autocomplete => Style new theme.css
  *
- *
+ *  3.Change information in view: nodes_autocompletion_callbacks
  */
 .navbar-header{
   div.search-block-form{
@@ -25,6 +25,7 @@
               color: #555555;
               z-index: 1000;
               text-shadow: none;
+              pointer-events: none;
           }
       }
   }
