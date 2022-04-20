@@ -11,8 +11,11 @@ jQuery('document').ready(function($){
         if ($el.find('video').length) {
             $el.find('.views-field-field-service1-image').hide();
             $el.css ({'border-radius': '10px', 'z-index':'999', 'position':'relative', 'border':'3px solid #47a6ff'});
-            $el.find('video').css('transform' , 'scale(1.1)').attr("href", $link);
-            $el.find('video').show()[0].play();
+            //disable right click menu
+            $el.find('video').bind('contextmenu',function() { return false; });
+            // show scale video and play
+            $el.find('video').css('transform' , 'scale(1.1)').attr("href", $link).show()[0].play();
+            
             $el.find('.views-field-title').css ({'display' : 'flex','z-index':'9999'});
             //** click video to node page */
             var $link = $el.find('div.views-field-title a').attr('href');
