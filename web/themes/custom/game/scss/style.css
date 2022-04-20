@@ -6682,8 +6682,8 @@ video {
       gap: 10px;
       flex-direction: row;
       border-radius: 20px;
-      border: 1px solid #233c52;
-      background-color: #233c52; }
+      border: 1px solid #10314e;
+      background-color: #10314e; }
       .view-game-detail.view-id-game_detail .view-display-id-block_2 .view-display-id-block_1 .view-content .views-row:hover {
         background-color: #215174;
         border-color: #215174; }
@@ -6698,7 +6698,7 @@ video {
 
 .playlist--item {
   border: none;
-  background-color: #233c52;
+  background-color: #10314e;
   border-radius: 4px;
   display: flex;
   flex-direction: row; }
@@ -6720,7 +6720,7 @@ video {
 
 .slick--view--home-playlist .slick__slide.slide .playlist--item {
   border: none;
-  background-color: #233c52;
+  background-color: #10314e;
   border-radius: 4px;
   display: flex;
   flex-direction: row; }

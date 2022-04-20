@@ -113,6 +113,9 @@ https://www.youtube.com/watch?v=crE3lcy_gW0
   export PATH=/Applications/MAMP/bin/php/php7.4.12/bin/:$PATH         #set php
   drush pm-uninstall module_name or drush pmu module_name
   drush en module_name
+  composer -v     # check version composer
+  composer self-update      #update composer
+  composer self-update --rollback     #to return to version 1.10.25
   ## update module by composer
 https://www.drupal.org/docs/updating-drupal/updating-modules-and-themes-using-composer
 
