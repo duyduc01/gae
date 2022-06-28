@@ -13,8 +13,8 @@
     margin:0px 20px 0px 5px;
 
     //- style dot button page
-    .slick-dots button{
-      display: none;  
+    .slick-dots {
+      display: none !important;  
     }
   }
 

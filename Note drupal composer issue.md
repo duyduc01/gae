@@ -295,5 +295,4 @@ $ git merge new-branch                  # merge branch to master
 # twig debugg
     https://www.drupal.org/docs/theming-drupal/twig-in-drupal/debugging-twig-templates
 
-        
 

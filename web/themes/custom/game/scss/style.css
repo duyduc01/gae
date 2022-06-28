@@ -6472,7 +6472,7 @@ video::-webkit-media-controls-panel {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px; }
       #block-mainnavigation #superfish-main li.sf-depth-1.menuparent.sfHover ul {
-        width: 84px !important;
+        width: 98px !important;
         margin: 0px; }
         #block-mainnavigation #superfish-main li.sf-depth-1.menuparent.sfHover ul a.sf-depth-2 {
           border-radius: 1px;
@@ -6675,8 +6675,10 @@ video::-webkit-media-controls-panel {
     font-size: 20px;
     line-height: 1.5em; }
     .view-game-detail.view-id-game_detail .view-display-id-block_2 .field-content p {
-      margin: 15px 0px 20px 20px;
-      font-size: 20px; }
+      margin: 15px 20px;
+      font-size: 20px;
+      overflow-wrap: break-word;
+      white-space: pre-wrap; }
     .view-game-detail.view-id-game_detail .view-display-id-block_2 .field-content li {
       margin: 10px 0px 0px 40px;
       list-style: outside; }
@@ -6766,8 +6768,8 @@ video::-webkit-media-controls-panel {
  */
 .slick .slick-dotted.slick-slider {
   margin: 0px 20px 0px 5px; }
-  .slick .slick-dotted.slick-slider .slick-dots button {
-    display: none; }
+  .slick .slick-dotted.slick-slider .slick-dots {
+    display: none !important; }
 .slick .slick__arrow {
   height: 100%;
   margin: 0px; }

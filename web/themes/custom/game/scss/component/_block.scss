@@ -77,6 +77,7 @@
   &.view-display-id-block_3>.view-content{
       margin: 15px 0px 0px 0px;
       background: black;
+      
   }
 
   //--iframe footer rating and button play, maximize
@@ -217,8 +218,10 @@
         font-size: 20px;
         line-height: 1.5em;
         p{
-          margin: 15px 0px 20px 20px;
+          margin: 15px 20px;
           font-size: 20px;
+          overflow-wrap: break-word;
+          white-space: pre-wrap;
         }
         li{
           margin: 10px 0px 0px 40px;
